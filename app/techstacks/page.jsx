@@ -98,47 +98,47 @@ export default function TechStack() {
     <main>
         <div className='border-b-2 border-white/20'>
             <div className='pagetitlepos'>
-                <h1 className='text-8xl font-semibold mb-2'>Tech Stacks</h1>
-                <p className='text-2xl text-white/35 font-semibold'>The dev tools, languages, and softwares that I use.</p>
+                <h1 className='text-6xl lg:text-8xl font-semibold mb-2'>Tech Stacks</h1>
+                <p className='text-lg lg:text-2xl text-white/35 font-semibold'>The dev tools, languages, and softwares that I use.</p>
             </div>
         </div>
         <div>
-            <h1 className='w-3/4 mx-auto text-5xl font-bold my-16'>Development</h1>
-            <div className='grid grid-cols-3 gap-5 w-3/4 mx-auto mb-16'>
+            <h1 className='w-3/4 mx-auto text-3xl md:text-4xl lg:text-5xl font-bold my-16'>Development</h1>
+            <div className='md:grid md:grid-cols-3 gap-5 w-[85%] lg:w-3/4 mx-auto mb-16'>
                 {techstacks.map((card, index) => (
-                    <div key={index} className='relative border border-white/10 rounded-3xl py-8 bg-white/10 hover:bg-white/15 duration-500 ease-in-out'>
+                    <div key={index} className='flex md:block relative border border-white/10 rounded-3xl p-5 md:py-8 bg-white/10 hover:bg-white/15 duration-500 ease-in-out mt-5 md:mt-0'>
                         {/* <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className={`size-6 absolute right-7 top-7`}>
                             <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
                         </svg> */}
 
-                        <div className='rounded-full w-fit mx-auto overflow-hidden'>
-                            <Image src={card.image} width={96} height={96} className='rounded m-auto py-12' alt={card.title} />
+                        <div className='w-1/4 rounded-full md:w-fit md:mx-auto overflow-hidden'>
+                            <Image src={card.image} width={96} height={96} className='rounded m-auto md:py-12' alt={card.title} />
                         </div>
-                        <div className='pl-8'>
-                            <h1 className='text-2xl font-semibold'>{card.title}</h1>
-                            <p className='mt-1 w-fit text-white/40'>{card.subtitle}</p>
+                        <div className='flex flex-row md:flex-col xl:pl-8 w-full justify-between items-center lg:items-start pl-5 md:px-0'>
+                            <h1 className='text-base md:text-xl lg:text-2xl font-semibold'>{card.title}</h1>
+                            <p className='text-xs md:text-base mt-1 w-fit text-white/40'>{card.subtitle}</p>
                         </div>
                     </div>
                 ))}
-                <div className='relative border border-white/10 rounded-3xl py-8 bg-white/10 hover:bg-white/15 duration-500 ease-in-out flex items-center'>
-                    <h1 className='px-8 text-center text-3xl font-semibold'>and much more to come...</h1>
+                <div className='mt-5 md:mt-0 relative border border-white/10 rounded-3xl py-5 md:py-8 bg-white/10 hover:bg-white/15 duration-500 ease-in-out flex items-center'>
+                    <h1 className='px-8 text-center text-xl md:text-3xl font-semibold'>and much more to come...</h1>
                 </div>
             </div>
         </div>
         <div>
-            <h1 className='w-3/4 mx-auto text-5xl font-bold my-16'>Technology</h1>
-            <div className='grid grid-cols-3 gap-5 w-3/4 mx-auto mb-16'>
+            <h1 className='w-3/4 mx-auto text-3xl md:text-4xl lg:text-5xl font-bold my-12 md:my-16'>Technology</h1>
+            <div className='md:grid md:grid-cols-3 gap-5 w-[85%] md:w-3/4 mx-auto mb-16'>
                 {technologies.map((card, index) => (
-                    <div key={index} className='relative border border-white/10 rounded-3xl py-8 bg-white/10 hover:bg-white/15 duration-500 ease-in-out'>
+                    <div key={index} className='flex md:block relative border border-white/10 rounded-3xl p-5 md:py-8 bg-white/10 hover:bg-white/15 duration-500 ease-in-out mt-5 md:mt-0'>
                         {/* <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className={`size-6 absolute right-7 top-7`}>
                             <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
                         </svg> */}
-                        <div className='rounded-full w-fit mx-auto overflow-hidden'>
-                            <Image src={card.image} width={96} height={96} className='rounded m-auto py-12' alt={card.title} />
+                        <div className='w-1/4 rounded-full md:w-fit md:mx-auto overflow-hidden'>
+                            <Image src={card.image} width={96} height={96} className='rounded m-auto md:py-12' alt={card.title} />
                         </div>
-                        <div className='pl-8'>
-                            <h1 className='text-2xl font-semibold'>{card.title}</h1>
-                            <p className='mt-1 w-fit text-white/40'>{card.subtitle}</p>
+                        <div className='flex flex-row justify-between items-center md:items-start w-full md:flex-col px-3 xl:pl-8'>
+                            <h1 className='text-lg md:text-2xl font-semibold'>{card.title}</h1>
+                            <p className='text-xs md:text-base mt-1 w-fit text-white/40'>{card.subtitle}</p>
                         </div>
                     </div>
                 ))}

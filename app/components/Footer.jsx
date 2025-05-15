@@ -5,13 +5,13 @@ import logo from '../images/SP.png'
 
 export default function Footer() {
   return (
-    <main className='flex border-t-2 border-white/15 py-8'>
-      <div className='w-1/2'>
-        <Image src={logo} alt='logo' className='w-[15%] mx-10'></Image>
-        <p className='m-10'>&copy; 2025. All Rights Reserved.</p>
+    <main className='flex flex-col-reverse md:flex-row border-t-2 border-white/15 pt-8 pb-24 md:py-8'>
+      <div className='md:w-1/2 mt-16 md:mt-0'>
+        <Image src={logo} alt='logo' className='w-[30%] md:w-[15%] ml-8 md:mx-10'></Image>
+        <p className='md:m-10 m-8'>&copy; 2025. All Rights Reserved.</p>
       </div>
-      <div className='w-1/2 flex justify-evenly'>
-        <div>
+      <div className='md:w-1/2 md:flex justify-evenly'>
+        <div className='text-center md:text-left'>
           <h1 className='text-2xl font-semibold mb-4'>Links</h1>
           <ul className='text-xl font-light'>
             <li className='footerlink'><Link href={'/about'}>About</Link></li>
@@ -21,7 +21,7 @@ export default function Footer() {
           </ul>
         </div>
 
-        <div className='w-[35%]'>
+        <div className='w-[75%] mx-auto md:mx-0 md:w-1/2 lg:w-[35%] mt-8 md:mt-0'>
           <h1 className='text-2xl mb-5 font-semibold text-center'>Social Media</h1>
           <div className='flex w-full justify-evenly'>
             <Link href={'https://www.linkedin.com/in/sarthak-phadnis-95a347253/'}>

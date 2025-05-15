@@ -16,8 +16,8 @@ export default function About() {
                 <p className='subheader'>Who I am and what I do.</p>
             </div>
         </div>
-        <div className='flex pt-16'>
-            <div className='w-[60%] pl-44'>
+        <div className='flex flex-col-reverse lg:flex-row pt-16'>
+            <div className='md:w-[85%] lg:w-[60%] pl-5 md:pl-24 lg:pl-12 xl:pl-44'>
                 <div className=''>
                     <span className='aboutheader'>Who I am?</span>
                     <p className='aboutdesc'>I'm <span className='keyword'>Sarthak,</span> a final-year engineering student at <Link href={'https://pict.edu/'} className='keyword'>Pune Institute of Computer Technology</Link>. Passionate about technology and problem-solving, I thrive on building innovative and user-friendly digital experiences. As a self-driven learner, I am always eager to explore and adapt to new technologies that enhance my skill set.</p>
@@ -43,9 +43,9 @@ export default function About() {
                     <p className='aboutdesc'>Let's build something amazing together!</p>
                 </div>
             </div>
-            <div className='w-[40%]'>
-                <Image src={aboutimg} alt='' className='border border-white/20 rounded-2xl mx-auto w-[70%] h-[60vh] shadow-xl shadow-white/25'></Image>
-                <Link href={'https://mail.google.com/mail/u/0/?fs=1&to=sarthakphadnis10@gmail.com&tf=cm'} className="flex mx-auto my-20 justify-evenly bg-white/10 w-[35%] p-5 text-lg rounded-xl shadow-inner shadow-gray-500 hover:shadow-inner hover:shadow-gray-400 duration-300 ease-in-out">
+            <div className='lg:w-[40%]'>
+                <Image src={aboutimg} alt='' className='border border-white/20 rounded-2xl mx-auto w-[85%] md:w-[65%] lg:w-[70%] h-[60vh] lg:h-[35vh] xl:h-[60vh] shadow-xl shadow-white/25'></Image>
+                <Link href={'https://mail.google.com/mail/u/0/?fs=1&to=sarthakphadnis10@gmail.com&tf=cm'} className="flex mx-auto my-10 lg:my-20 justify-evenly bg-white/10 w-[60%] md:w-1/4 lg:w-1/2 xl:w-[35%] p-5 md:text-lg rounded-xl shadow-inner shadow-gray-500 hover:shadow-inner hover:shadow-gray-400 duration-300 ease-in-out">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-7">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 0 1-.923 1.785A5.969 5.969 0 0 0 6 21c1.282 0 2.47-.402 3.445-1.087.81.22 1.668.337 2.555.337Z" />
                     </svg>

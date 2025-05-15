@@ -23,28 +23,32 @@ body {
   color: white;
 }
 
+.navreslinks {
+  @apply p-2 rounded-xl
+}
+
 .header {
-  @apply text-7xl font-semibold mb-2
+  @apply text-5xl md:text-6xl lg:text-7xl font-semibold mb-2
 }
 
 .subheader {
-  @apply text-2xl text-white/35 font-semibold
+  @apply text-lg lg:text-2xl text-white/35 font-semibold
 }
 
 .pagetitlepos {
-  @apply w-3/4 mx-auto pt-24 pb-16
+  @apply w-[85%] lg:w-3/4 mx-auto pt-24 pb-16
 }
 
 .card {
-  @apply w-[30%] py-8 rounded-xl bg-white/10 border border-white/10 hover:border hover:border-white/20 duration-300
+  @apply md:w-3/4 md:mx-auto lg:mx-0 lg:w-[30%] py-8 rounded-xl bg-white/10 border border-white/10 hover:border hover:border-white/20 duration-300 mt-8 lg:mt-0
 }
 
 .card-header {
-  @apply text-center text-3xl font-bold mb-3
+  @apply text-center text-2xl md:text-3xl font-bold mb-3
 }
 
 .card-subheader {
-  @apply text-center text-lg text-white/40
+  @apply text-center md:text-lg text-white/40
 }
 
 .cardgridimg:nth-child(1), .cardgridimg:nth-child(2){
@@ -56,11 +60,11 @@ body {
 }
 
 .aboutheader {
-  @apply text-white/35 font-semibold text-lg
+  @apply text-white/35 font-semibold text-base md:text-lg
 }
 
 .aboutdesc {
-  @apply text-xl text-white/50 mt-3
+  @apply text-lg md:text-xl text-white/50 mt-3
 }
 
 .keyword {
@@ -68,7 +72,7 @@ body {
 }
 
 .projectcard {
-  @apply flex w-3/4 mx-auto my-16 bg-white/10 rounded-2xl border border-white/10 hover:border hover:border-white/20 duration-500
+  @apply flex w-[85%] xl:w-3/4 mx-auto my-16 bg-white/10 rounded-2xl border border-white/10 hover:border hover:border-white/20 duration-500
 }
 
 .arrowicon {
@@ -81,23 +85,23 @@ body {
 }
 
 .projtxt {
-  @apply w-1/2 p-14
+  @apply lg:w-1/2 p-6 lg:p-14
 }
 
 .projecttitle {
-  @apply text-4xl mb-5 font-bold
+  @apply text-2xl lg:text-4xl mb-5 font-bold
 }
 
 .projectdesc {
-  @apply text-xl text-white/35
+  @apply text-sm lg:text-xl text-white/35
 }
 
 .proj1img {
-  @apply w-1/2 relative p-12
+  @apply w-1/2 hidden lg:block relative p-12
 }
 
 .proj2img {
-  @apply w-1/2 grid grid-cols-2 gap-5 p-14 hover:scale-110 duration-300
+  @apply w-1/2 hidden lg:grid lg:h-fit xl:h-auto grid-cols-2 gap-5 p-14 hover:scale-110 duration-300
 }
 
 .footerlink {
